@@ -1,13 +1,112 @@
-body {
+/* Global Styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Movie List Styles */
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.movie-card {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-card h2 {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+.movie-card p {
+  padding: 0 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.movie-card a {
+  display: block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.movie-card a:hover {
+  background-color: #0056b3;
+}
+
+/* Movie Detail Styles */
+.movie-detail {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.movie-detail h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.movie-detail p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.movie-detail iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+
+.movie-detail a {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.movie-detail a:hover {
+  background-color: #0056b3;
 }
